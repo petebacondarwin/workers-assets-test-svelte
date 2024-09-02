@@ -4,10 +4,10 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "preview": "pnpm run build && wrangler pages dev",
+    "preview": "pnpm run build && wrangler dev",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "deploy": "pnpm run build && wrangler pages deploy",
+    "deploy": "pnpm run build && wrangler deploy",
     "cf-typegen": "wrangler types && mv worker-configuration.d.ts src/"
   },
   "devDependencies": {
@@ -22,7 +22,7 @@
     "svelte-check": "^3.6.0",
     "typescript": "^5.0.0",
     "vite": "^5.0.3",
-    "wrangler": "^3.73.0"
+    "wrangler": "0.0.0-c4f0d9e01"
   },
   "type": "module"
 }
